@@ -93,8 +93,8 @@ $(function() {
             });
         });
         it('are not empty', function() {
-            expect(document.querySelector('.feed').firstElementChild).
-                        not.toBeNull();
+            expect(document.querySelectorAll('.feed .entry').length).
+                        toBeGreaterThan(0);
         });
     });
     /* TODO: Write a new test suite named "New Feed Selection" */
